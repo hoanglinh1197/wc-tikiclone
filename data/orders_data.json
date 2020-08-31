@@ -1,0 +1,48 @@
+{
+    "orders":[
+       {
+          "oid":"508822249",
+          "uName":"Trần Hạo Nam",
+          "oDate":"21-8-2019",
+          "products":[
+             "Ram Laptop Samsung DDR3L bus 1600",
+             "Ổ Cứng SSD WD Green 240GB 3D NAND - WDS240G2G0A"
+          ],
+          "amount":"210000",
+          "shipAddr":"19 Nguyễn Đình Chiểu, phường 15, quận 3, Thành phố Hồ Chí Minh",
+          "uPhone":"0980909123",
+          "expectedShipDate":"25-8-2019",
+          "paymentMethod":"COD",
+          "oStatus":"Đang chờ xử lý"
+       },
+       {
+          "oid":"541238791",
+          "uName":"Nguyễn Anh Hào",
+          "oDate":"24-8-2019",
+          "products":[
+             "Bộ Kích Sóng Wifi Repeater 300Mbps TP-Link TL-WA855RE"
+          ],
+          "amount":"512000",
+          "shipAddr":"25 Lê Hồng Phong, phường 14, quận 10, Thành phố Hồ Chí Minh",
+          "uPhone":"0984785146",
+          "expectedShipDate":"26-8-2019",
+          "paymentMethod":"Zalo Pay",
+          "oStatus":"Giao hàng thành công"
+       },
+       {
+          "oid":"478413695",
+          "uName":"Lê Hồng Quân",
+          "oDate":"20-8-2019",
+          "products":[
+             "Tai Nghe Nhét Tai JBL C150SI (Đen)",
+             "Khay Ổ Cứng Caddy Bay 9.5mm Siêu Mỏng (Gắn Ổ Cứng Thay Ổ Quang Laptop)"
+          ],
+          "amount":"689000",
+          "shipAddr":"14 Nguyễn Chí Thanh, phường 12, quận 5, Thành phố Hồ Chí Minh",
+          "uPhone":"0984578136",
+          "expectedShipDate":"23-8-2019",
+          "paymentMethod":"Momo",
+          "oStatus":"Đang vận chuyển"
+       }
+    ]
+ }

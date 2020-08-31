@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sản phẩm đã xem</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/product_watched.css">
+
+</head>
+
+<body class="bdy">
+    <header class="header bg-primary">
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary px-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand text-white h1" href="#"><strong>Tiki</strong></a>
+                    <img src="media/img/logo.png" alt="" class="img-fluid" style="max-width: 80px;">
+                    <div class="input-group col-6">
+                        <input type="text" class="form-control"
+                            placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ...">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">Tìm kiếm</span>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav col-5 px-0">
+                        <li class="nav-item active">
+                            <i class="fas fa-archive text-white"></i>
+                            <span class="nav-link text-white d-inline" href="#">Theo dõi đơn hàng </span>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-bell text-white"></i>
+                            <span class="nav-link text-white d-inline" href="#">Thông báo của tôi</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <i class="fas fa-user text-white"></i>
+                            <span class="nav-link text-white d-inline" id="labelLginModal" onclick="login()">Đăng nhập
+                                tài khoản</span>
+                        </li>
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                            <i class="fas fa-shopping-cart"></i>
+                            Giỏ hàng
+                        </button>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary px-0">
+                <a class="navbar-brand text-white" href="#">Danh mục sản phẩm</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#"> </i> Địa chỉ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sản phẩm bạn đã xem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Giao hàng nhanh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Thực phẩm tươi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sản phẩm chính hiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">30 ngày đổi trả </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row first-content mt-5">
+                <div class="col-2 mb-auto mt-auto mr-0">
+                    <a>
+                        <img src="media/img/product_infor/main_ngdqdnlqn.jpg"
+                            alt="Nhung gi da qua dung nghi lai qua nhieu" class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-6 mt-2">
+                    <div class="infomation">
+                        <p class="title mb-0" style="font-size: medium;">
+                            Những gì đã qua đừng nghĩ lại quá nhiều
+                        </p>
+                        <p class="seller-name"><span style="font-size:small;">Cung cấp bởi </span><a
+                                href="https://tiki.vn/cua-hang/nha-sach-fahasa" target="_blank">Nhà sách Fahasa</a></p>
+                        <p class="author" style="font-size:medium">Rieko Hinata</p>
+                        <div class="evaluation"><a><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </a>
+                        </div>
+                        <p class="cover-books"></p>
+
+
+                        <div class="description">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 text-center mt-auto mb-auto">
+                    <p class="price mb-0" style="font-weight: bold;"> 39.000đ</p>
+                    <button type="button" class="btn btn-danger btn-md ">Thêm vào giỏ hàng</button>
+
+                </div>
+            </div>
+            <div class="row first-content mt-3">
+                <div class="col-2 mb-auto mt-auto mr-0">
+                    <a>
+                        <img src="media/img/product_infor/hieusachmorisaki.jpg" alt="Tiệm sách morisaki"
+                            class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-6 m-auto">
+                    <div class="infomation mt-2">
+                        <p class="title mb-0" style="font-size: medium;">
+                            Những giấc mơ ở hiệu sách Morisaki
+                        </p>
+                        <p class="seller-name"><span style="font-size:small;">Cung cấp bởi </span><a
+                                href="https://tiki.vn/cua-hang/nha-sach-fahasa" target="_blank">Tiki Trading</a></p>
+
+                        <p class="author" style="font-size:medium">Yagisawa Satoshi</p>
+                        <div class="evaluation"><a><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </a>
+                        </div>
+                        <p class="cover-books"></p>
+
+
+                        <div class="description text-justify">
+                            <p>Bị người yêu lừa dối, Takako bỏ việc và rơi vào chuỗi ngày ngủ triền miên để trốn tránh
+                                nỗi
+                                buồn. Thế rồi, một cuộc điện thoại từ người cậu ruột cả 10 năm trời không gặp đã đánh
+                                thức
+                                cô khỏi cơn mộng mị. Takako đồng ý đến trông hiệu sách nửa buổi giúp cậu chỉ để làm vừa
+                                lòng
+                                mẹ. Nhưng thật ngoài tưởng tượng, chờ đợi cô là hiệu sách Morisaki cũ kỹ với thế giới
+                                của
+                                hàng nghìn cuốn sách chứa trong mình cả thời gian và lịch sử. Sách đã chữa lành vết
+                                thương
+                                trong lòng cô.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 text-center mt-auto mb-auto">
+                    <p class="price mb-0" style="font-weight: bold;"> 69.000đ</p>
+                    <button type="button" class="btn btn-danger btn-md ">Thêm vào giỏ hàng</button>
+
+                </div>
+            </div>
+            <div class="row first-content mt-3">
+                <div class="col-2 mb-auto mt-auto mr-0">
+                    <a>
+                        <img src="media/img/product_infor/colenhungvisaocungcamthaycodon.jpg"
+                            alt="Có lẽ những vì sao cũng cảm thấy cô đơn" class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-6 m-auto">
+                    <div class="infomation">
+                        <p class="title mb-0" style="font-size: medium;">
+                            Có lẽ những vì sao cũng cảm thấy cô đơn
+                        </p>
+                        <p class="seller-name"><span style="font-size:small;">Cung cấp bởi </span><a
+                                href="https://tiki.vn/cua-hang/nha-sach-fahasa" target="_blank">Nhà sách Fahasa</a></p>
+
+                        <p class="author" style="font-size:medium">Rieko Hinata</p>
+                        <div class="evaluation"><a><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </a>
+                        </div>
+                        <p class="cover-books"></p>
+
+
+                        <div class="description">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 text-center mt-auto mb-auto">
+                    <p class="price mb-0" style="font-weight: bold;"> 69.000đ</p>
+                    <button type="button" class="btn btn-danger btn-md ">Thêm vào giỏ hàng</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5  ">
+        <div class="container px-0">
+            <div class="row px-0  ">
+                <div class="col-2 px-0">
+                    <img src="media/footer/newsletter.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-5 row align-content-end">
+                    <span class="text-secondary d-block h5">Đăng ký nhận bản tin Tiki </span>
+                    <span class="text-secondary d-block h6">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn
+                    </span>
+                </div>
+                <div class="col-5 row align-content-end ml-auto">
+                    <form class="form-inline w-100">
+                        <input class="form-control col-9" type="text" placeholder="Địa chỉ email của bạn"
+                            aria-label="emailFooter">
+                        <button class="btn btn-info my-2 my-sm-0 col-3" type="submit">
+                            <i class="fas fa-search"></i>
+                            Tìm kiếm
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-content bg-white mt-5 border-bottom">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-3">
+                        <div class="footer-sub-title">Hỗ trợ khách hàng</div>
+                        <small class="text-danger">Hotline chăm sóc khách hàng: 1900-6035</small>
+                        <small> (1000đ/phút , 8-21h kể cả T7, CN)</small>
+
+                        <small> Các câu hỏi thường gặp</small>
+                        <small> Gửi yêu cầu hỗ trợ</small>
+                        <small> Hướng dẫn đặt hàng</small>
+                        <small>Phương thức vận chuyển</small>
+                        <small> Chính sách đổi trả</small>
+                        <small> Hướng dẫn mua trả góp</small>
+                        <small> Chính sách hàng nhập khẩu</small>
+                        <small> Hỗ trợ khách hàng: hotro@tiki.vn</small>
+                        <small>Báo lỗi bảo mật: security@tiki.vn </small>
+                    </div>
+                    <div class="col">
+                        <div class="footer-sub-title"> VỀ TIKI</div>
+                        <small>Giới thiệu Tiki</small>
+                        <small> Tuyển Dụng</small>
+
+                        <small> Chính sách bảo mật thanh toán</small>
+                        <small> Chính sách bảo mật thông tin cá nhân</small>
+                        <small> Hướng dẫn đặt hàng</small>
+                        <small> Chính sách giải quyết khiếu nại</small>
+                        <small> Điều khoản sử dụng</small>
+                        <small> Giới thiệu Tiki Xu</small>
+                        <small> Bán hàng doanh nghiệp</small>
+                        <small> HỢP TÁC VÀ LIÊN KẾT</small>
+                        <small>Quy chế hoạt động Sàn GDTMĐT</small>
+                        <small> Bán hàng cùng Tiki</small>
+                    </div>
+                    <div class="col">
+                        <div class="footer-sub-title"> HỢP TÁC VÀ LIÊN KẾT </div>
+                        <small>Quy chế hoạt động Sàn GDTMĐT</small>
+                        <small> Bán hàng cùng Tiki</small>
+                    </div>
+                    <div class="col">
+                        <div class="footer-sub-title"> PHƯƠNG THỨC THANH TOÁN </div>
+                        <div class="row">
+                            <div class="col-4 mx-0 mt-2"><img src="media/footer/visa.svg" alt=""></div>
+                            <div class="col-4 mx-0 mt-2"><img src="media/footer/mastercard.svg" alt=""></div>
+                            <div class="col-4 mx-0 mt-2"><img src="media/footer/jcb.svg" alt=""></div>
+                            <div class="col-4 mx-0 mt-2"><img src="media/footer/cash.svg" alt=""></div>
+                            <div class="col-4 mx-0 mt-2"><img src="media/footer/internet-banking.svg" alt=""></div>
+                            <div class="col-4 mx-0 mt-2"><img src="media/footer/installment.svg" alt=""></div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-sub-title">KẾT NỐI VỚI CHÚNG TÔI</div>
+                        <span><i class="fab fa-facebook-f text-info"></i></span>
+                        <span><i class="fab fa-youtube text-danger"></i></span>
+                        <span class="text-info h6"> Zalo</span>
+
+                        <div class="footer-sub-title mt-5">KẾT NỐI VỚI CHÚNG TÔI</div>
+                        <div class=" col-9 pl-0"><img src="media/footer/appstore.png" alt="" class="img-fluid"></div>
+                        <div class="col-9 pl-0"><img src="media/footer/playstore.png" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end bg-white pt-5 pb-5">
+            <div class="container">
+                <p class="offset-1 col-6"><Strong>Địa chỉ văn phòng:</Strong> <small>52 Út Tịch, phường 4, quận Tân
+                        Bình, thành phố Hồ Chí Minh</small>
+                <p class="offset-1 col-6 mb-5"><small>Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ
+                        mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</small></p>
+                <p class="offset-0 col-5 mt-5 mb-0"><strong>© 2016 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn
+                    </strong> </p>
+                <span class="offset-0 col-5 mt-0"><small>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch
+                        và Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010</small> </span>
+
+                <div class="col-1 d-inline-block mr-0 float-right pr-0"><img src="media/footer/bo-cong-thuong.svg"
+                        alt=""></div>
+                <div class="col-1 d-inline-block float-right ml-0"><img src="media/footer/bo-cong-thuong-2.png" alt=""
+                        style="width: 46px; height: 46px"></div>
+
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="plugins/jquery/jquery-3.5.1.min.js"> </script>
+    <script src="js/bootstrap.bundle.min.js"> </script>
+    <script src="js/index.js"> </script>
+    <script src="js/data.js"> </script>
+    <script src="js/data_user.js"> </script>
+    <script src="js/log_in.js"> </script>
+
+</body>
+
+</html>
+<!-- 
+  Báo lỗi bảo mật: security@tiki.vn
+                  
+                 
+                  
+                  
+                 
+                  
+                 
+                 
+                 
+                 
+                
+                  
+                
+                  PHƯƠNG THỨC THANH TOÁN
+                  
+                  
+                  KẾT NỐI VỚI CHÚNG TÔI
+ -->

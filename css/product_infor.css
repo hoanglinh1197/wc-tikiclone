@@ -1,0 +1,231 @@
+.col-img img {
+    border: 1px solid rgb(0, 127, 240);
+}
+
+.main-img {
+    width: 290px;
+    height: 290px;
+}
+
+.first-content .header a img {
+    width: 90px;
+    height: 26px;
+}
+
+.title {
+    font-weight: lighter;
+}
+
+.first-content .header a {
+    display: inline-flex;
+    font-size: 110%;
+}
+
+.first-content .header {
+    background-color: white;
+}
+
+.row-img a img {
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.evaluation i {
+    color: yellow;
+}
+
+.evaluation a p {
+    color: rgb(0, 127, 240);
+    font-size: 13px;
+    margin: 0px 0px 0px 5px;
+}
+
+.ratings a .prize-icon {
+    background-image: url('media/img/product_infor/prize.png');
+    width: 23px;
+    height: 24px;
+    background-size: 23px 24px;
+}
+
+.ratings p {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    line-height: 24px;
+    margin: 8px 0px 0px
+}
+
+.rating-text {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.rating-in {
+    color: rgb(0, 127, 240);
+}
+
+.rating-in,
+.rating-inline {
+    font-size: smaller;
+}
+
+.infor {
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.brand {
+    border-bottom: 1px solid rgb(163, 161, 161);
+}
+
+.brand p {
+    font-size: small;
+}
+
+.free-shipping {
+    background-color: rgba(0, 153, 0, 0.05);
+}
+
+.widget-info__icon {
+    display: block;
+    width: 33px;
+}
+
+.widget-info__content {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(0, 153, 0);
+}
+
+.widget-info__title {
+    font-weight: bold;
+}
+
+.widget-info__description {
+    display: inline;
+    margin: 0px 0px 0px 3px;
+}
+
+.price {
+    color: rgb(255, 52, 37);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.original-price {
+    color: rgb(155, 155, 155);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.original-price span {
+    color: rgb(255, 52, 37);
+    font-weight: 400;
+}
+
+.group-bttn-label {
+    color: rgb(123, 123, 123);
+    font-size: 11px;
+}
+
+.btn-group .btn-light {
+    border: 1px solid rgb(123, 123, 123);
+    font-size: smaller;
+}
+
+.btn-add-to-cart {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 57, 69);
+}
+
+.favorite {
+    color: rgb(163, 161, 161);
+}
+
+.tikicon-seller {
+    font-size: large;
+}
+
+.seller-content {
+    font-size: small;
+}
+
+.space {
+    background-color: darkgray;
+}
+
+.row .content-left .infor-warning {
+    border: 1px solid blue !important;
+}
+
+.promotions {
+    font-size: smaller;
+}
+.card-title{
+    font-size: 13px;
+}
+
+.discount, .original{
+    color: rgb(120, 120, 120);
+    font-size: 11px;
+    padding: 0;
+    margin:0;
+
+}
+.original{
+    text-decoration: line-through;
+    padding: 0;
+    margin: 0;
+}
+.card-body .card-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 40px;
+}
+.inner-note{
+    font-size: smaller;
+}
+#pd-content{
+    text-align: justify;
+}
+.product-detail-infor .left{
+    background-color: white;
+}
+
+.product-detail-infor .right{
+    margin-left: 20px;
+}
+.product-description{
+    background-color: white;
+}
+.infor-infor-warnning .cart{
+    border: 1px solid yellow !important;
+}
+
+.comment-content{
+    width: 50%;
+}
+.comment-content .progress{
+    margin-top: 5px;
+}
+
+.icon-guarantee {
+    width: 16px;
+    height: 16px;
+    background-image: url(media/img/product_infor/guarantee.png);
+    background-size: 16px 16px;
+}
+.btn-answer, .btn-share{
+    color: rgb(0, 127, 240);
+}
+.user-cmt{
+    background-color: white;
+}
+.guarantee-icon-icon {
+    background-image: url('media/img/product_infor/guarantee.png');
+    width: 23px;
+    height: 24px;
+    background-size: 23px 24px;
+}

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thông tin sản phẩm</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-social.css" type="text/css" />
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/product_infor.css">
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+
+</head>
+
+<body class="bdy">
+    <header class="header bg-primary">
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary px-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand text-white h1" href="#"><strong>Tiki</strong></a>
+                    <img src="media/img/logo.png" alt="" class="img-fluid" style="max-width: 80px;">
+                    <div class="input-group col-6">
+                        <input type="text" class="form-control"
+                            placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ...">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">Tìm kiếm</span>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav col-5 px-0">
+                        <li class="nav-item active">
+                            <i class="fas fa-archive text-white"></i>
+                            <span class="nav-link text-white d-inline" href="#">Theo dõi đơn hàng </span>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-bell text-white"></i>
+                            <span class="nav-link text-white d-inline" href="#">Thông báo của tôi</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <i class="fas fa-user text-white"></i>
+                            <span class="nav-link text-white d-inline" id="labelLginModal" onclick="login()">Đăng
+                                nhập tài khoản</span>
+                        </li>
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                            <i class="fas fa-shopping-cart"></i>
+                            Giỏ hàng
+                        </button>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary px-0">
+                <a class="navbar-brand text-white" href="#">Danh mục sản phẩm</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#"> </i> Địa chỉ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sản phẩm bạn đã xem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Giao hàng nhanh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Thực phẩm tươi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sản phẩm chính hiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">30 ngày đổi trả </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <!-- <section class="under-header mt-5"> -->
+        <div class="container px-0">
+            <nav aria-label="breadcrumb justify-content-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+
+        <!-- Duong dan -->
+
+
+        <div class="container">
+            <div class="row first-content ">
+                <div class="row row-cols-3 img justify-content-around">
+                    <div class="col-4 flex-row p-1 ">
+                        <div class="row row-cols-2">
+                            <div class="col-3 flex-column">
+                                <div class="col-img">
+                                    <img src="media/img/product_infor/nhunggidaquadungnghilaiquanhieu.jpg"
+                                        alt="Nhung gi da qua dung nghi lai qua nhieu">
+                                </div>
+                            </div>
+
+                            <div class="col-9 main-img flex-row">
+                                <img src="media/img/product_infor/main_ngdqdnlqn.jpg" class="img-thumbnail"
+                                    alt="Nhung gi da qua dung nghi lai qua nhieu">
+
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 flex-row float-right justify-content-between">
+                            <div class="col-auto m-0 row-img">
+                                <a>
+                                    <img src="media/img/product_infor/nhunggidaquadungnghilaiquanhieu.jpg"
+                                        alt="Nhung gi da qua dung nghi lai qua nhieu">
+                                </a>
+                                <a>
+                                    <img src="media/img/product_infor/nhunggidaquadungnghilaiquanhieu.jpg"
+                                        alt="Nhung gi da qua dung nghi lai qua nhieu">
+                                </a>
+                                <a>
+                                    <img src="media/img/product_infor/nhunggidaquadungnghilaiquanhieu.jpg"
+                                        alt="Nhung gi da qua dung nghi lai qua nhieu">
+                                </a>
+                                <a>
+                                    <img src="media/img/product_infor/nhunggidaquadungnghilaiquanhieu.jpg"
+                                        alt="Nhung gi da qua dung nghi lai qua nhieu">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 mt-1 pl-5 header">
+                        <div class="row row-cols-1 mt-1">
+                            <a>
+                                <img src="media/img/product_infor/tikinow.png" class="img-thumbnail" /> <span
+                                    class="title">| Những Gì Đã Qua Đừng Nghĩ Lại Quá Nhiều (Tái Bản 2020)(Tặng Kèm 01
+                                    Bookmark)</span>
+                            </a>
+                        </div>
+
+                        <div class="row row-cols-1 flex-row mt-2 evaluation">
+                            <a><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <p> (Xem 283 đánh giá)</p>
+
+                            </a>
+                        </div>
+
+                        <div class="row row-cols-1 mt-2 flex ratings">
+                            <a>
+                                <i class="prize-icon"
+                                    style="background-image: url('media/img/product_infor/prize.png'); "></i>
+
+                                <span class="rating-text">Đứng thứ 6 </span>&nbsp; <span class="rating-inline">
+                                    trong</span>&nbsp; <span class="rating-in">Top 100 Truyện ngắn - Tản văn - Tạp Văn
+                                    bán chạy tuần này</span>
+
+
+                            </a>
+                        </div>
+
+                        <div class="row row-cols-1 mt-2 brand">
+                            <a>
+                                <p>Tác giả:&nbsp;<a href="#">Minh Mẫn<span>,&nbsp;</span></a><a href="#">Du Phong</a>
+                                    <a href="#">&nbsp; Bìa mềm &nbsp;</a> SKU: <span itemprop="sku">4919539724614</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="row row-cols-1 justify-content-start ">
+                            <div class="col-7 p-0 content-left">
+                                <div class=" row row-cols-1 free-shipping mt-3">
+                                    <div class="col-2 widget-info__icon "><img
+                                            src="media/img/product_infor/free-shipping.png " alt="free shipping "></div>
+                                    <div class="col-10 widget-info__content ">
+                                        <div class="widget-info__title ">Miễn phí giao tiêu chuẩn (tối đa 30k)</div>
+                                        <div class="widget-info__description ">cho đơn hàng từ 249k <a
+                                                href="https://hotro.tiki.vn/hc/vi/articles/360041890732-C%C3%A1ch-t%C3%ADnh-ph%C3%AD-v%E1%BA%ADn-chuy%E1%BB%83n-%C3%A1p-d%E1%BB%A5ng-t%E1%BB%AB-th%C3%A1ng-6-2020 ">Xem
+                                                chi tiết</a></div>
+                                    </div>
+                                </div>
+                                <div class="group mt-2 vertical">
+                                    <div class="price-and-icon m-0">
+                                        <p class="price">36.000
+                                            <!-- -->₫</p>
+                                        <p class="original-price first-child m-0 p-0">Tiết kiệm: <span>50
+                                                <!-- -->%</span> (
+                                            <!-- -->36.000
+                                            <!-- -->₫)</p>
+                                        <p class="original-price ">Giá thị trường:
+                                            <!-- -->72.000
+                                            <!-- -->₫</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="group-bttn-label m-0 pl-3">
+                                        Số lượng:
+                                    </p>
+                                </div>
+                                <div class=" row group-buttn justify-content-around">
+                                    <div class="col-4">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-light">-</button>
+                                            <button type="button" class="btn btn-light">1</button>
+                                            <button type="button" class="btn btn-light">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <button type="button" class="btn btn-primary  btn-add-to-cart">
+                                            <i class="fas fa-shopping-cart"></i> &nbsp;
+                                            Chọn mua
+                                        </button>
+                                    </div>
+                                    <div class="col-3">
+                                        <i class="far fa-heart fa-2x my-auto favorite offset-1"></i>
+                                    </div>
+                                </div>
+
+                                <div class="infor-infor-warnning mt-3">
+                                    <div class="cart ">
+                                        <div class="card-header">
+                                            <div class="row">
+                                                <div class="col-2 infor-warnning-left">
+                                                    <i class="fas fa-warning text-warning fa-lg"></i>
+                                                </div>
+                                                <div class="col-10 m-0 p-0 infor-warnning-right">
+                                                    <p class="inner-note text-justify">Bạn ơi hãy
+                                                        <span style="color: rgb(0, 127, 240);
+                                            font-weight: 500;">NHẬP ĐỊA CHỈ</span> nhận hàng để được dự báo thời gian
+                                                        &amp; chi phí giao hàng một cách chính xác nhất.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row mt-3 pl-3">
+                                    <h5>Thường được mua cùng </h5>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <div>
+                                            <img src="media/img/product_infor/nhunggidaquadungnghilaiquanhieu.jpg"
+                                                alt="Nhung gi da qua dung nghi lai qua nhieu"
+                                                class="img-fluid img-thumbnail">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-1">
+                                        +
+                                    </div>
+                                    <div class="col-3">
+                                        <div>
+                                            <img src="media/img/product_infor/nhunggidaquadungnghilaiquanhieu.jpg"
+                                                alt="Nhung gi da qua dung nghi lai qua nhieu"
+                                                class="img-fluid img-thumbnail">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-5 justify-content-center ">
+                                        <p style="font-size: 12px;" class="m-0 p-0">Tổng tiền: <span
+                                                style="color: red;">70.500 ₫</span></p>
+                                        <button class="btn btn-danger btn-sm p-0"> Thêm 2 sp vào giỏ hàng</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-4 p-0 offset-1 ml-auto mr-auto align-items-center mt-3 content-right">
+                                <div class="card ">
+                                    <div class="card-body ">
+
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 seller-infor">
+                                                <i class="fas fa-house-user fa-2x text-warning"></i>
+
+                                            </div>
+                                            <div class="col-9 seller-content">
+                                                <a href="https://tiki.vn/cua-hang/tiki-trading" class="seller-name">Tiki
+                                                    Trading</a>
+                                                <p class=" seller-body">Cam kết chính hiệu 100%</p>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <button type="button" class="btn col-12 btn-primary">Xem shop</button>
+                                        </div>
+                                        <div class="row mt-3 justify-content-center">
+                                            <div class="col-3 seller-infor">
+                                                <i class="fas fa-money fa-2x text-warning"></i>
+                                            </div>
+                                            <div class="col-9 seller-content ">
+                                                <b>Tiki hoàn tiền 111%</b>
+                                                <p class="seller-body"> Nếu phát hiện hàng giả</p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-1 btn-group-social">
+                                    <button type="button" class="btn btn-primary btn-sm mr-1 p-0">
+                                        <i class="far fa-thumbs-up"></i>
+                                        Thích 391
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-sm m-0 p-0">
+                                        <i class="fas fa-share-alt"></i>
+                                        Share
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="row mt-3 pl-3">
+                                <div class="promotions ">
+                                    <h5 class="group-title">DỊCH VỤ &amp; KHUYẾN MÃI LIÊN QUAN</h5>
+                                    <ul class="list">
+                                        <li>
+                                            <p>Đăng kí gói <b style="color: red;">TikiNOW</b> để nhận giao hàng miễn phí
+                                                và nhiều ưu đãi dành riêng cho thành viên - <a
+                                                    href=" https://tiki.vn/tikinow?src=pdp" target="_blank">Xem chi
+                                                    tiết</a></p>
+                                        </li>
+                                        <li>Nhận ngay voucher Tiki 1 triệu đồng và Săn ngay 10 Samsung Note20 Ultra với
+                                            thẻ Sacombank Tiki Platinum. <a
+                                                href="https://tiki.vn/chuong-trinh/sacombank-samsung-giut-co-hon?src=textpdp"
+                                                target="_blank">Xem chi tiết</a></li>
+                                        <li>Nhập mã SACHHAY8 giảm thêm 8K cho đơn hàng Sách Tiếng Việt từ 88K trở lên(*)
+                                            Chỉ áp dụng cho các sản phẩm của nhà cung cấp Tiki Trading.(*) Số lần sử
+                                            dụng: 1 lần/ 1 khách hàng</li>
+                                        <li>Miễn phí giao hàng tiêu chuẩn cho đơn hàng từ 149K. Chỉ trong 25-26/08. Mỗi
+                                            khách hàng chỉ sử dụng được 2 lần</li>
+                                        <li>Hoàn tiền 15% cho mọi chi tiêu với Thẻ Tín Dụng Liên Kết Sacombank Tiki
+                                            Platinum - <a href="https://tiki.vn/chuong-trinh/mo-the-tikicard"
+                                                target="_blank"
+                                                style="background-color: rgb(255, 255, 255); color: rgb(230, 0, 0);">Mở
+                                                thẻ ngay</a></li>
+                                        <li>Nhập ZALOPAY20 giảm 20K cho đơn hàng từ 100K khi thanh toán qua Zalopay, từ
+                                            20/08/2020 - 31/08/2020. Số lần sử dụng: 1 lần/khách hàng. Số lượng có hạn.
+                                            Chi tiết <a
+                                                href="https://tiki.vn/chuong-trinh/uu-dai-zalopay-tiki?src=textpdp"
+                                                target="_blank">tại đây</a></li>
+                                        <li>Nhập mã DZUTCOUPON giảm 50% (tối đa 50K) tất cả sản phẩm tại App TikiKhông
+                                            bao gồm Tã, Sữa, Bia, Voucher - Dịch vụ, Mì gói, Dầu ăn...Mỗi khách hàng chỉ
+                                            được sử dụng coupon 1 lần/tài khoản/thiết bịHSD: Chỉ từ 25/08
+                                            - 26/08﻿Số lượng có hạn</li>
+                                        <li>Nhập mã ZALOPAY10 Giảm ngay 10.000 VND cho đơn hàng sách có giá trị từ
+                                            30.000 VND khi thanh toán qua ZaloPay. Số lần sử dụng: 1 lần/khách hàng. Số
+                                            lượng có hạn. Chi tiết <a
+                                                href="https://tiki.vn/chuong-trinh/uu-dai-zalopay-tiki"
+                                                target="_blank">tại đây</a></li>
+                                        <li>Nhập mã&nbsp;DZUTCPBK giảm&nbsp;15%&nbsp;tối đa&nbsp;50k&nbsp;cho&nbsp;đơn
+                                            hàng từ&nbsp;188k&nbsp;trở lên.Áp dụng cho các sản phẩm Sách
+                                            do&nbsp;Tiki&nbsp;phân phối.</li>
+                                        <li>Nhận Quà Tặng 17.3tr &amp; Gói TikiNOW 1 Năm với thẻ Citi. <a
+                                                href="https://tiki.vn/chuong-trinh/mo-the-citibank-2020?src=pdp"
+                                                target="_blank">Mở thẻ ngay</a></li>
+                                        <li>Nhập mã&nbsp;25DZUTBK giảm&nbsp;25%&nbsp;tối đa&nbsp;80k&nbsp;cho&nbsp;đơn
+                                            hàng từ&nbsp;288k&nbsp;trở lên.Áp dụng cho các sản phẩm Sách
+                                            do&nbsp;Tiki&nbsp;phân phối.Số lượng Coupon rất có hạn</li>
+                                        <li>Nhập mã&nbsp;T8DZUT8 giảm&nbsp;8%&nbsp;(Tối đa 30k)&nbsp;cho&nbsp;đơn hàng
+                                            từ&nbsp;100k&nbsp;trở lên.Áp dụng cho các sản phẩm Sách&nbsp;do&nbsp;Tiki
+                                            phân phối.</li>
+                                        <li>Nhập mã TIKIMOMO khi tải và đăng kí MoMo để được: Coupon 50K cho đơn từ
+                                            300K, Thêm 2 coupon 30K cho đơn hàng tiếp theo từ 300K. <a
+                                                href="https://tiki.vn/chuong-trinh/momo-tiki-now?src=pdp"
+                                                target="_blank" style="background-color: rgb(255, 255, 255);">Xem chi
+                                                tiết</a></li>
+                                        <li>Đăng ký dịch vụ BookCare để được bọc plastic đến 99% sách tại Tiki.vn</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h5>SẢN PHẨM THƯỜNG ĐƯỢC XEM CÙNG
+            </h5>
+        </div>
+        <!-- Carousel -->
+        <div class="row ">
+            <div id="carousel-example" class="row carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                        <div class="card m-0 p-0">
+                            <img src="media/img/product_infor/main_ngdqdnlqn.jpg"
+                                class="img-thumbnail card-img-top mx-auto d-block" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-title justify-content-around">Những Gì Đã Qua Đừng Nghĩ Lại Quá Nhiều
+                                    (Tái Bản 2020)(Tặng Kèm 01 Bookmark)</p>
+                                <p class="card-text price"><span class="real-price">44.000 ₫</span>
+                                    <span class="discount">-50%</span>
+                                    <br>
+                                    <span class="original">88.000 ₫</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="card m-0 p-0">
+                            <img src="media/img/product_infor/main_ngdqdnlqn.jpg"
+                                class="img-thumbnail card-img-top mx-auto d-block" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-title justify-content-around">Những Gì Đã Qua Đừng Nghĩ Lại Quá Nhiều
+                                    (Tái Bản 2020)(Tặng Kèm 01 Bookmark)</p>
+                                <p class="card-text price"><span class="real-price">44.000 ₫</span>
+                                    <span class="discount">-50%</span>
+                                    <br>
+                                    <span class="original">88.000 ₫</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="card m-0 p-0">
+                            <img src="media/img/product_infor/main_ngdqdnlqn.jpg"
+                                class="img-thumbnail card-img-top mx-auto d-block" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-title justify-content-around">Những Gì Đã Qua Đừng Nghĩ Lại Quá Nhiều
+                                    (Tái Bản 2020)(Tặng Kèm 01 Bookmark)</p>
+                                <p class="card-text price"><span class="real-price">44.000 ₫</span>
+                                    <span class="discount">-50%</span>
+                                    <br>
+                                    <span class="original">88.000 ₫</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="card m-0 p-0">
+                            <img src="media/img/product_infor/main_ngdqdnlqn.jpg"
+                                class="img-thumbnail card-img-top mx-auto d-block" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-title justify-content-around">Những Gì Đã Qua Đừng Nghĩ Lại Quá Nhiều
+                                    (Tái Bản 2020)(Tặng Kèm 01 Bookmark)</p>
+                                <p class="card-text price"><span class="real-price">44.000 ₫</span>
+                                    <span class="discount">-50%</span>
+                                    <br>
+                                    <span class="original">88.000 ₫</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="card m-0 p-0">
+                            <img src="media/img/product_infor/main_ngdqdnlqn.jpg"
+                                class="img-thumbnail card-img-top mx-auto d-block" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-title justify-content-around">Những Gì Đã Qua Đừng Nghĩ Lại Quá Nhiều
+                                    (Tái Bản 2020)(Tặng Kèm 01 Bookmark)</p>
+                                <p class="card-text price"><span class="real-price">44.000 ₫</span>
+                                    <span class="discount">-50%</span>
+                                    <br>
+                                    <span class="original">88.000 ₫</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="card m-0 p-0">
+                            <img src="media/img/product_infor/main_ngdqdnlqn.jpg"
+                                class="img-thumbnail card-img-top mx-auto d-block" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-title justify-content-around">Những Gì Đã Qua Đừng Nghĩ Lại Quá Nhiều
+                                    (Tái Bản 2020)(Tặng Kèm 01 Bookmark)</p>
+                                <p class="card-text price"><span class="real-price">44.000 ₫</span>
+                                    <span class="discount">-50%</span>
+                                    <br>
+                                    <span class="original">88.000 ₫</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Thong tin san pham -->
+        <div class="row mt-5">
+            <h5>Thông tin chi tiết</h5>
+        </div>
+        <div class="row product-detail-infor">
+            <div class="col-9 p-0 left">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th scope="row detail-infor">Công ty phát hành</th>
+                            <td>Người Trẻ Việt</td>
+                        </tr>
+                        <tr>
+                            <th scope="row detail-infor">Ngày xuất bản</th>
+                            <td>03-2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row detail-infor">Kích thước</th>
+                            <td>13 x 20,5 cm
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row detail-infor">Loại bìa </th>
+                            <td>Bìa mềm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row detail-infor">Số trang</th>
+                            <td>240</td>
+                        </tr>
+                        <tr>
+                            <th scope="row detail-infor">SKU</th>
+                            <td>7927610825836
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row detail-infor">Nhà xuất bản</th>
+                            <td>Nhà Xuất Bản Văn Học
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-3">
+                <div class=" right">
+                    <a href="https://tiki.vn/chuong-trinh/thuong-hieu-thoi-trang?src=product_detail_right_banner">
+                        <img src="media/img/product_infor/tiki-fashion.jpg" alt="tiki-fashion" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-0 pb-0 pd-title">
+            <h5>MÔ TẢ SẢN PHẨM
+            </h5>
+        </div>
+        <div class="row mt-1 justify-content-center p-3 product-description">
+            <div id="pd-content">
+                <p>
+                    Nếu Minh Mẫn chia sẻ những câu chuyện nhỏ mà sâu sắc, thấm thía thì Du Phong lại tô điểm thêm
+                    cho
+                    “Những gì đã qua đừng nghĩ lại nhiều” những làn thơ trong trẻo, trầm bổng và du dương. Hai cây
+                    bút
+                    như hòa quyện vào nhau rồi tan ra, lắng đọng lại trong hồn mỗi độc giả. Bản thân mình cảm thấy
+                    có ý
+                    chí và vui vẻ hơn sau khi khép lại cuốn sách này.
+                </p>
+                <p>
+                    Cuốn sách có tựa đề đơn giản và những câu chuyện trong đây cũng thật giản đơn. Tuy nhiên, bạn sẽ
+                    phải bất ngờ vì những chuyến phiêu lưu cùng cảm xúc qua cuốn sách này đấy nhé! Mình say mê cuốn
+                    sách
+                    này ngay từ những trang đầu tiên. Văn phong quá gần gũi, quá thật thà, một đòn đánh trúng cảm
+                    xúc
+                    trong lòng mình và nó giúp khơi dậy những kí ức ở một miền xa xăm nào đó…”
+                </p>
+
+            </div>
+            <div class="d-flex justify-content-center pd-btn">
+                <button class="btn btn-outline-primary collapsion-btn" id="collapsion-btn" onclick="collapse()">Thu
+                    gọn nội dung</button>
+            </div>
+        </div>
+
+        <!-- Khách hàng nhận xét -->
+        <!-- <div class="row mt-5 mb-0 pb-0 comment-title"> -->
+
+        <section class="mt-5" id="about">
+            <div class="container user-cmt">
+                <!-- Comment -->
+                <div class="row justify-content-center align-content-center mt-3 p-3">
+                    <div class="col-4 text-center">
+                        <p>Đánh giá trung bình</p>
+                        <p><span class="point-evaluation" style="color: red; font-size: xx-large;"> 4.5/5 </span></p>
+                        <div class="evaluation"><a><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <p> (Xem 283 đánh giá)</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 justify-content-center">
+                        <div class="row row-cols-3">
+                            <div class="col-2 evaluation">
+                                <span>5 <i class="fas fa-star"></i></span>
+                                <span>4 <i class="fas fa-star"></i></span>
+                                <span>3 <i class="fas fa-star"></i></span>
+                                <span>2 <i class="fas fa-star"></i></span>
+                                <span>1 <i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="col-8">
+                                <div class="progress mb-2">
+                                    <div class="progress-bar " role="progressbar" aria-valuenow="72" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 72%">72%</div>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar " role="progressbar" aria-valuenow="17" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 17%">17%</div>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="7" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 7%">7%</div>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar " role="progressbar" aria-valuenow="2" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 2%">2%</div>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 2%">2%</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span class="numOfEva">72%</span>
+                                <span class="numOfEva">17%</span>
+                                <span class="numOfEva">7%</span>
+                                <span class="numOfEva">2%</span>
+                                <span class="numOfEva">2%</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-4 justify-content-end text-center">
+                        <p>Chia sẻ về sản phẩm</p>
+                        <button class="btn btn-warning">Viết nhận xét của bạn</button>
+                    </div>
+                </div>
+
+                <div class="row justify-content-start mt-5 cmt-filter">
+                    <div class="col-3 evaluated-left">
+                        <p>Chọn xem nhận xét</p>
+                    </div>
+                    <div class="col-6 d-inline-flex evaluated">
+                        <div class="col-auto">
+                            <div class="dropdown">
+                                <button class="btn btn-outline-info btn-sm dropdown-toggle" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Hữu ích
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item active" href="#">Hữu ích</a>
+                                    <a class="dropdown-item" href="#">Mới nhất</a>
+                                    <a class="dropdown-item" href="#">Có hình ảnh</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-auto">
+                            <div class="dropdown">
+                                <button class="btn btn-outline-info btn-sm dropdown-toggle" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Tất cả khách hàng
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item active" href="#">Tất cả khách hàng</a>
+                                    <a class="dropdown-item" href="#">Khách đã mua hàng</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-auto">
+                            <div class="dropdown">
+                                <button class="btn btn-outline-info btn-sm dropdown-toggle" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Tất cả các sao
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">5 sao</a>
+                                    <a class="dropdown-item" href="#">4 sao</a>
+                                    <a class="dropdown-item" href="#">3 sao</a>
+                                    <a class="dropdown-item" href="#">2 sao</a>
+                                    <a class="dropdown-item" href="#">1 sao</a>
+                                    <a class="dropdown-item active" href="#">Hài lòng</a>
+                                    <a class="dropdown-item" href="#">Không hài lòng</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-3 ">
+                    <div class="col-3 justify-content-between">
+                        <div class="text-center">
+                            <img src="media/img/product_infor/avatar.jpg" class="rounded-circle" alt="Cinque Terre">
+                            <p class="username-cmt mt-1 pb-0 mb-0">Hương Trà</p>
+                            <span class="date-cmt m-0">23-12-2020</span>
+                        </div>
+                    </div>
+                    <div class="col-9 flex-row mt-3 cmt-line">
+                        <div class="row row-cols-1 flex-row mt-2 evaluation">
+                            <a><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="level-cmt font-weight-bold">Bình thường</span>
+                            </a>
+                        </div>
+                        <div class="text-justify">
+                            <p class="cmt-content">Tiki giao hàng rất nhanh, thứ 2 đặt là thứ 3 có hàng rồi, đỉnh cực
+                                đỉnh. Nhưng chất lượng hàng thì không vừa ý mình tí nào cả :( Sách có sạn, bóng vẩy, lại
+                                còn bị bụi bẩn nữa... hàng tồn kho nên nhét cho khách online à? Phía sau gáy còn bị sờn
+                                nữa... thất vọng về sách ghê gớm :( mua sách để tặng mà mình ship tới cho ngta rồi chứ
+                                không cũng sẽ đổi trả. Mua sách như chơi trò may rủi vậy, may thì sách đẹp đẽ sạch sẽ,
+                                xui thì sách như mình nhận được vậy á :(</p>
+                        </div>
+                        <div class="row row-cols-1 flex-row mt-2 cmt-evaluation">
+                            <div class="buttons d-inline-flex justify-content-start interactions">
+                                <a class="btn-answer" href="#">Trả lời</a>
+                                <a class="btn-share ml-3" href="#">Chia sẻ Facebook</a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    </div>
+
+    <!-- </section> -->
+
+    <footer class="footer mt-5 ">
+        <div class="container px-0 ">
+            <div class="row px-0 ">
+                <div class="col-2 px-0 ">
+                    <img src="media/footer/newsletter.png " alt=" " class="img-fluid ">
+                </div>
+                <div class="col-5 row align-content-end ">
+                    <span class="text-secondary d-block h5 ">Đăng ký nhận bản tin Tiki </span>
+                    <span class="text-secondary d-block h6 ">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn
+                    </span>
+                </div>
+                <div class="col-5 row align-content-end ml-auto ">
+                    <form class="form-inline w-100 ">
+                        <input class="form-control col-9 " type="text " placeholder="Địa chỉ email của bạn "
+                            aria-label="emailFooter ">
+                        <button class="btn btn-info my-2 my-sm-0 col-3 " type="submit ">
+                            <i class="fas fa-search "></i>
+                            Tìm kiếm
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-content bg-white mt-5 border-bottom ">
+            <div class="container ">
+                <div class="row py-5 ">
+                    <div class="col-3 ">
+                        <div class="footer-sub-title ">Hỗ trợ khách hàng</div>
+                        <small class="text-danger ">Hotline chăm sóc khách hàng: 1900-6035</small>
+                        <small> (1000đ/phút , 8-21h kể cả T7, CN)</small>
+
+                        <small> Các câu hỏi thường gặp</small>
+                        <small> Gửi yêu cầu hỗ trợ</small>
+                        <small> Hướng dẫn đặt hàng</small>
+                        <small>Phương thức vận chuyển</small>
+                        <small> Chính sách đổi trả</small>
+                        <small> Hướng dẫn mua trả góp</small>
+                        <small> Chính sách hàng nhập khẩu</small>
+                        <small> Hỗ trợ khách hàng: hotro@tiki.vn</small>
+                        <small>Báo lỗi bảo mật: security@tiki.vn </small>
+                    </div>
+                    <div class="col ">
+                        <div class="footer-sub-title "> VỀ TIKI</div>
+                        <small>Giới thiệu Tiki</small>
+                        <small> Tuyển Dụng</small>
+
+                        <small> Chính sách bảo mật thanh toán</small>
+                        <small> Chính sách bảo mật thông tin cá nhân</small>
+                        <small> Hướng dẫn đặt hàng</small>
+                        <small> Chính sách giải quyết khiếu nại</small>
+                        <small> Điều khoản sử dụng</small>
+                        <small> Giới thiệu Tiki Xu</small>
+                        <small> Bán hàng doanh nghiệp</small>
+                        <small> HỢP TÁC VÀ LIÊN KẾT</small>
+                        <small>Quy chế hoạt động Sàn GDTMĐT</small>
+                        <small> Bán hàng cùng Tiki</small>
+                    </div>
+                    <div class="col ">
+                        <div class="footer-sub-title "> HỢP TÁC VÀ LIÊN KẾT </div>
+                        <small>Quy chế hoạt động Sàn GDTMĐT</small>
+                        <small> Bán hàng cùng Tiki</small>
+                    </div>
+                    <div class="col ">
+                        <div class="footer-sub-title "> PHƯƠNG THỨC THANH TOÁN </div>
+                        <div class="row ">
+                            <div class="col-4 mx-0 mt-2 "><img src="media/footer/visa.svg " alt=" "></div>
+                            <div class="col-4 mx-0 mt-2 "><img src="media/footer/mastercard.svg " alt=" "></div>
+                            <div class="col-4 mx-0 mt-2 "><img src="media/footer/jcb.svg " alt=" "></div>
+                            <div class="col-4 mx-0 mt-2 "><img src="media/footer/cash.svg " alt=" "></div>
+                            <div class="col-4 mx-0 mt-2 "><img src="media/footer/internet-banking.svg " alt=" "></div>
+                            <div class="col-4 mx-0 mt-2 "><img src="media/footer/installment.svg " alt=" "></div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="footer-sub-title ">KẾT NỐI VỚI CHÚNG TÔI</div>
+                        <span><i class="fab fa-facebook-f text-info "></i></span>
+                        <span><i class="fab fa-youtube text-danger "></i></span>
+                        <span class="text-info h6 "> Zalo</span>
+
+                        <div class="footer-sub-title mt-5 ">KẾT NỐI VỚI CHÚNG TÔI</div>
+                        <div class=" col-9 pl-0 "><img src="media/footer/appstore.png " alt=" " class="img-fluid ">
+                        </div>
+                        <div class="col-9 pl-0 "><img src="media/footer/playstore.png " alt=" " class="img-fluid ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end bg-white pt-5 pb-5 ">
+            <div class="container ">
+                <p class="offset-1 col-6 ">
+                    <Strong>Địa chỉ văn phòng:</Strong> <small>52 Út Tịch, phường 4, quận Tân Bình, thành
+                        phố Hồ Chí Minh</small>
+                <p class="offset-1 col-6 mb-5 "><small>Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ
+                        mua và
+                        nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</small></p>
+                <p class="offset-0 col-5 mt-5 mb-0 "><strong>© 2016 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn
+                    </strong>
+                </p>
+                <span class="offset-0 col-5 mt-0 "><small>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế
+                        hoạch và Đầu
+                        tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010</small> </span>
+
+                <div class="col-1 d-inline-block mr-0 float-right pr-0 "><img src="media/footer/bo-cong-thuong.svg "
+                        alt=" "></div>
+                <div class="col-1 d-inline-block float-right ml-0 "><img src="media/footer/bo-cong-thuong-2.png "
+                        alt=" " style="width: 46px; height: 46px "></div>
+
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="plugins/jquery/jquery-3.5.1.min.js ">
+    </script>
+    <script src="js/bootstrap.bundle.min.js ">
+    </script>
+    <script src="js/index.js ">
+    </script>
+    <script src="js/data.js ">
+    </script>
+    <script src="js/data_user.js"> </script>
+    <script src="js/log_in.js">
+    </script>
+
+    <!-- Carousel -->
+    <!-- <script src="assets/js/jquery-migrate-3.0.0.min.js"></script> -->
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script src="js/product_infor.js">
+
+    </script>
+</body>
+
+</html>
+<!-- 
+  Báo lỗi bảo mật: security@tiki.vn
+                  
+                 
+                  
+                  
+                 
+                  
+                 
+                 
+                 
+                 
+                
+                  
+                
+                  PHƯƠNG THỨC THANH TOÁN
+                  
+                  
+                  KẾT NỐI VỚI CHÚNG TÔI
+ -->
